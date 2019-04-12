@@ -23,6 +23,14 @@
 
 
 ### 修改 jms.ini 文件
+    [DEFAULT]
+
+    [mysql]
+    DBNAME = jms
+    USER = jms
+    PASSWORD = jmspass
+    HOST = 127.0.0.1
+    PORT = 3306
 
 ### 同步数据库
     python3 ./jumpserver/manage.py migrate
